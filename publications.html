@@ -13,8 +13,24 @@
   <meta charset="UTF-8">
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-</head>
-        
+
+   <!-- 配置MathJax -->
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [ ['$','$'], ['\\(','\\)'] ],
+    displayMath: [ ['$$','$$'], ['\\[','\\]'] ],
+    processEscapes: true,
+    tags: 'ams'  // 启用自动编号
+  },
+  options: {
+    renderActions: {
+      addMenu: []  // 禁用右键菜单
+    }
+  }
+};
+</script>     
+    </head>
 <table>
 <tr>
 <td width="1">[7] </td>
@@ -30,7 +46,7 @@
 </td> </tr>
 <tr>
     <td width="1">[5] </td>
-      <td><b><p>On the p-adic transcendence of $\sum_{k=0}^{\infty}{-1/p^k}$ </p> </b>
+      <td><b>On the p-adic transcendence of $\sum_{k=0}^{\infty}{-1/p^k}$ </b>
 (with <a href="yijunyuan.github.io">Y. Yuan</a>),
 <a href="transcendence.pdf">pdf</a>, preprint 2025.
 </td> </tr>
